@@ -1,0 +1,58 @@
+{% load static %}
+<nav class="px-nav px-nav-left">
+    <button type="button" class="px-nav-toggle" data-toggle="px-nav">
+      <span class="px-nav-toggle-arrow"></span>
+      <span class="navbar-toggle-icon"></span>
+      <span class="px-nav-toggle-label font-size-11">HIDE MENU</span>
+    </button>
+
+    <ul class="px-nav-content">
+      <li class="px-nav-box p-a-3 b-b-1" id="demo-px-nav-box">
+        <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <img src="{% static 'assets/demo/avatars/1.jpg' %}" alt="" class="pull-xs-left m-r-2 border-round" style="width: 54px; height: 54px;">
+        <div class="font-size-16"><span class="font-weight-light">Welcome, </span><strong>John</strong></div>
+        <div class="btn-group" style="margin-top: 4px;">
+          <a href="#" class="btn btn-xs btn-primary btn-outline"><i class="fa fa-envelope"></i></a>
+          <a href="#" class="btn btn-xs btn-primary btn-outline"><i class="fa fa-user"></i></a>
+          <a href="#" class="btn btn-xs btn-primary btn-outline"><i class="fa fa-cog"></i></a>
+          <a href="#" class="btn btn-xs btn-danger btn-outline"><i class="fa fa-power-off"></i></a>
+        </div>
+      </li>
+
+      <li class="px-nav-item">
+        <a href="utilities.html"><i class="px-nav-icon ion-cube"></i><span class="px-nav-label">Banner</span></a>
+      </li>
+
+      <li class="px-nav-item px-nav-dropdown">
+        <a href="#"><i class="px-nav-icon ion-erlenmeyer-flask"></i><span class="px-nav-label">Products</span></a>
+        <ul class="px-nav-dropdown-menu">
+          <li class="px-nav-item"><a href="widgets-lists.html"><span class="px-nav-label">Catagory</span></a></li>
+          <li class="px-nav-item"><a href="widgets-pricing.html"><span class="px-nav-label">Subcatagory</span></a></li>
+          <li class="px-nav-item"><a href="widgets-timeline.html"><span class="px-nav-label">Products</span></a></li>
+        </ul>
+      </li>
+    
+      <li class="px-nav-item px-nav-dropdown">
+        <a href="#"><i class="px-nav-icon ion-monitor"></i><span class="px-nav-label">Agents</span></a>
+        <ul class="px-nav-dropdown-menu">
+          <li class="px-nav-item"><a href="ui-buttons.html"><span class="px-nav-label">Delivery Agent</span></a></li>
+          <li class="px-nav-item"><a href="{% url 'addseller' %}"><span class="px-nav-label">Seller</span></a></li>
+          <li class="px-nav-item"><a href="ui-modals.html"><span class="px-nav-label">Stockrooms</span></a></li>
+          <li class="px-nav-item"><a href="ui-alerts.html"><span class="px-nav-label">Stock Agent</span></a></li>
+        </ul>
+      </li>
+
+      <li class="px-nav-item px-nav-dropdown">
+        <a href="#"><i class="px-nav-icon ion-android-checkbox-outline"></i><span class="px-nav-label">Management</span></a>
+        <ul class="px-nav-dropdown-menu">
+          <li class="px-nav-item"><a href="forms-layout.html"><span class="px-nav-label">Pincode</span></a></li>
+          <li class="px-nav-item"><a href="forms-controls.html"><span class="px-nav-label">Non Delivery Agent</span></a></li>
+          <li class="px-nav-item"><a href="forms-components.html"><span class="px-nav-label">Coupon</span></a></li>
+          <li class="px-nav-item"><a href="forms-advanced.html"><span class="px-nav-label">Delivery Agent Incentive</span></a></li>
+          <li class="px-nav-item"><a href="forms-sliders.html"><span class="px-nav-label">Delivery Slots</span></a></li>
+          <li class="px-nav-item"><a href="forms-pickers.html"><span class="px-nav-label">Notification</span></a></li>
+        </ul>
+      </li>
+      
+    </ul>
+  </nav>
