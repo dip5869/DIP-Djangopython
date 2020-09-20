@@ -12,6 +12,9 @@ def addseller(request):
 def View(request):
     return render(request,'seller/view.html')
 
+def View1(request):
+    return render(request,'seller/view.html')
+
 def insertseller(request):
     u_password = randint(100, 999)  # randint is inclusive at both ends
     if request.method=='POST':
